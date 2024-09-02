@@ -3,7 +3,6 @@ aiosignal==1.3.1
 annotated-types==0.7.0
 anyio==4.4.0
 apikey==0.2.4
-appopener==1.7
 asgiref==3.8.1
 asttokens==2.4.1
 attrs==23.2.0
