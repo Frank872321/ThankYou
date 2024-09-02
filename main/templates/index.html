@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+    <head>
+        <title>{% block title %}
+        Secret
+        {% endblock %}</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,400,0,0" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,400,0,0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="Intro">
+            <div class="Text">
+            <h1>Cái này chỉ dành cho các giảng viên ở ABC</h1>
+            <span class="material-symbols-outlined">
+                mouse
+            </span><br>
+            <span class="material-symbols-outlined">
+                arrow_downward
+                </span>
+            <h5>Tiếp tục lướt để khám phá</h5>
+            <h6>Được tạo ra bởi học sinh của ABC</h6>
+            </div>
+        </div>
+        <div class="Part1">
+            <div class="main">
+            <h1>Chuyện gì đã xảy ra sau khi tốt nghiệp vậy???</h1>
+            <p>Sau khi tốt nghiệp thì chúng con rất nhớ các thầy cô và rất muốn cảm ơn thầy cô, nhưng mà chúng con không có tiền để mua quà :(( và bây giờ cũng đã quá muộn để nói lời cảm ơn rồi cho nên chúng con quyết định tạo ra trang web này để thay thế lời cảm ơn đến các thầy cô</p>
+            <p>Dưới đây sẽ là những lời cảm ơn của chúng con gửi đên các thầy cô.</p>
+            </div>
+        </div>
+            {% for item in queryset %} 
+            <div class="content">
+                <li>{{ item.name }} - {{item.yourclass}} <br> {{ item.content}}</li> 
+            </div>
+            {% endfor %}
+        <div class="final">
+            <h1>Cảm ơn các thầy cô rất nhiều</h1>
+            <p>Cảm ơn tất cả các giảng viên của ABC đã cho chúng con một niềm vui trong hè và trau dồi kiến thức cho chúng con có thể đạt những đỉnh cao trong cuộc đời của chúng con</p>
+        </div>
+    </body>
+    <style>
+        .Intro{
+            padding: 20.20% 39.5%;
+            text-align: center;
+            background-color: #75b0e1 ;
+            margin: -10px;
+            color: white;
+            font-family: "Merriweather", serif;
+            font-weight: 400;
+            font-size:large;
+            font-size: 30;
+            background-size:contain;
+            h1{
+                padding-bottom: -2px;
+                margin-bottom: -2px;
+            }
+            h5{
+                padding-bottom: 0;
+                margin-bottom: -1.4%;
+                margin-top: -0.5%;
+            }
+            span{
+                margin-bottom: -0.5%;
+            }
+        }
+        .Part1{
+            text-align: center;
+            font-family: "Merriweather", serif;
+            font-weight: 400;
+            .main{
+                margin-right: 15px;
+                margin-left:15px;
+            }
+            padding-right: 260px auto;
+            padding-left: 260px auto;
+            padding-top: 210px ;
+            padding-bottom: 210px ;  
+            background: url({% static '457865450_1051160870346690_2190275401750703422_n.jpg' %});
+            color: white;
+            font-size: large;
+            margin-left: -10px;
+            margin-right: -10px;
+            background.repeat: no-repeat;
+            background-size:cover;
+        }
+        .content{
+            li{
+                text-align: left;
+                margin-left: 300px auto;
+                margin-right: 300px auto;
+                font-family: "Merriweather", serif;
+                font-weight: 400;
+                border-style: solid;
+                border-width: 3px;
+                border-radius: 5px;
+                margin-bottom: 10px;
+                padding: 15px;
+                list-style: none;
+                margin-top: 10px;
+                }
+            }
+        .final{
+            background: url({% static 'z5789911218208_607c2e097507c5cc3c685aeaa1c796f3.jpg' %});
+            text-align: center;
+            font-family: "Merriweather", serif;
+            font-weight: 400;
+            padding-top:100px;
+            padding-bottom: 600px ;  
+            background-size: cover;
+            color: white;
+            margin:-1%;
+            margin-top: 0%;
+        }
+    </style>
+</html>

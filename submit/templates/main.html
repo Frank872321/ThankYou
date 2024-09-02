@@ -1,0 +1,52 @@
+<html>
+<head>
+<title>Create a Post </title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<div class="Introductions">
+<h1>Hãy gửi những lời cảm ơn của bạn đến thầy cô ở học viện ABC</h1>
+</div> 
+<form action="" method="POST">
+{% csrf_token %}
+Tên của bạn: <input type="text" name="name"/><br/>
+Khoá học: <input type="text" name="class"/><br/>
+Nội dung: <br/>
+<textarea cols="35" rows="8" name="content">
+</textarea><br/>
+<input type="submit" value="Post"/>
+<div class="thankyou">
+    <p>Cảm ơn bạn rất nhiều vì đã gửi lời cảm ơn của bạn</p>
+</div>
+</form>
+</body>
+<style>
+    .Introductions{
+        background-color:rgb(6, 123, 194);
+        margin: -1% ;
+        h1 {
+            padding: 30px 30px;
+            text-align: center;
+            margin-top: -0%;
+            font-family: "Fira Sans", sans-serif;
+            font-weight: 400;
+            font-size: normal;
+            color: #EAEBED
+        }
+    }
+    form{
+        padding: 15px 10px;
+        border-style:solid ;
+        border-width: 2px;
+        border-color: gray;
+        border-radius: 5px;
+        display: block;
+        font-family: "Fira Sans", sans-serif;
+        font-weight: 400;
+        font-size: normal;
+    }
+</style>
+</html>
