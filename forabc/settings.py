@@ -126,7 +126,7 @@ STATIC_URL = "main/static/"
 STATIC_ROOT = BASE_DIR / 'productionfiles'
 #Add this in your settings.py file:
 STATICFILES_DIRS = [
-    BASE_DIR / 'mystaticfiles'
+    BASE_DIR / 'main/static'
 ]
 # This production code might break development mode, so we check whether we're in DEBUG mode
 # Default primary key field type
