@@ -124,6 +124,10 @@ USE_TZ = True
 
 STATIC_URL = "main/static/"
 STATIC_ROOT = BASE_DIR / 'productionfiles'
+#Add this in your settings.py file:
+STATICFILES_DIRS = [
+    BASE_DIR / 'mystaticfiles'
+]
 # This production code might break development mode, so we check whether we're in DEBUG mode
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
