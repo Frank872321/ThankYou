@@ -3,3 +3,4 @@
 Funfact:
 <li>Mất 6 ngày để tạo ra và deploy web app</li>
 <li>Frank827321(chủ sở hữu) là Nguyên Minh</li>
+<li>Người làm thứ 2 là Gia Bảo(co-owner)</li>
