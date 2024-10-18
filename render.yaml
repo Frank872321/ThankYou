@@ -1,7 +1,7 @@
 databases:
-  - name: mysitedb
+  - name: 20thang10
     plan: free
-    databaseName: mysite
+    databaseName: 20thang10
     user: mysite
 
 services:
