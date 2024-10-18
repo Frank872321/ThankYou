@@ -40,10 +40,6 @@
                 <li>{{ item.name }} - {{item.yourclass}} <br> {{ item.content}}</li> 
             </div>
             {% endfor %}
-            {% load static %}
-            <video loop autoplay muted>
-                <source src={% static 'main.mp4' %} type="video/mp4">
-            </video>
         <div class="final">
             <h1>Cảm ơn các thầy cô rất nhiều</h1>
             <p>Cảm ơn tất cả các giảng viên của ABC đã cho chúng con một niềm vui trong hè và trau dồi kiến thức cho chúng con có thể đạt những đỉnh cao trong cuộc đời của chúng con</p>
@@ -53,11 +49,7 @@
         </div>
     </body>
     <style>
-        video{
-    margin-left: 0px;
-    height: 100%;
-    width: 100%;
-}
+
 .Intro{
     padding: 22% 39.5%;
     text-align: center;
@@ -138,4 +130,4 @@
     margin-bottom: -2%;
 }
     </style>
-</html>
+</html>     
