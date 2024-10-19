@@ -82,7 +82,7 @@ WSGI_APPLICATION = 'forabc.wsgi.application'
 DATABASES = {
     'default': dj_database_url.config(
         # Replace this value with your local database's connection string.
-        default='postgresql://mysite:5ECy7OQJW9KIZK7dlU3DXo42PIisn6V0@dpg-crap4qij1k6c73cild8g-a.oregon-postgres.render.com/mysite_db52',
+        default='postgresql://db_20thang10_user:Dedkp4pL0GBbeYNpuZpXjKiCbHhI0Ak6@dpg-cs8smerqf0us738fabu0-a.oregon-postgres.render.com/db_20thang10',
         conn_max_age=600
     )
 }
