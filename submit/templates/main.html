@@ -8,24 +8,24 @@
 
 <body>
 <div class="Introductions">
-<h1>Hãy gửi những lời cảm ơn của bạn đến thầy cô ở học viện ABC</h1>
+<h1>Hãy gửi những lời chúc của bạn đến các bạn nữ trong lớp(tỏ tình tại đây cũng được)</h1>
 </div> 
 <form action="" method="POST">
 {% csrf_token %}
 Tên của bạn: <input type="text" name="name"/><br/>
-Khoá học: <input type="text" name="class"/><br/>
+Bạn thuộc bộ?: <input type="text" name="class"/><br/>
 Nội dung: <br/>
 <textarea cols="35" rows="8" name="content">
 </textarea><br/>
 <input type="submit" value="Post"/>
 <div class="thankyou">
-    <p>Cảm ơn bạn rất nhiều vì đã gửi lời cảm ơn của bạn</p>
+    <p>Cảm ơn bạn rất nhiều vì đã gửi lời chúc của bạn</p>
 </div>
 </form>
 </body>
 <style>
     .Introductions{
-        background-color:rgb(6, 123, 194);
+        background-color:pink;
         margin: -1% ;
         h1 {
             padding: 30px 30px;
